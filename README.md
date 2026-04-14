@@ -1,21 +1,31 @@
 https://mch-codes.github.io/Accessible-Form-UI/
+# Accessible Form UI
 
-This project follows key accessibility principles:
-Semantic HTML
-Proper use of <form>, <label>, <fieldset>, and <legend>
-Logical heading structure
-Form Usability
-Every input is associated with a label
-Clear instructions and placeholders
-Required fields properly indicated
-Error Handling
-Inline error messages
-Linked via aria-describedby
-Uses aria-invalid for validation feedback
-Keyboard Navigation
-All elements are reachable via keyboard
-Logical tab order
-Visible focus states
-Screen Reader Support
-ARIA roles and attributes where needed
-Descriptive labels and messages
+A simple and accessible form UI built with HTML, CSS, and JavaScript, following best practices for usability and inclusivity.
+
+## Description
+
+This project demonstrates how to build accessible web forms using semantic HTML and proper accessibility techniques such as labels, ARIA attributes, and keyboard navigation.
+
+## Features
+
+- Semantic HTML form structure
+- Accessible labels and inputs
+- Keyboard-friendly navigation
+- Screen reader support
+- Client-side validation with accessible error messages
+- Responsive design
+
+## Getting Started
+
+### Prerequisites
+
+You only need a modern web browser.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/mch-codes/Accessible-Form-UI.git
+cd Accessible-Form-UI
