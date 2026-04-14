@@ -1,75 +1,115 @@
-* {
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
-input {
-  border-radius: 10px;
-  width: 300px;
-  padding: 5px;
-  margin: 5px;
-  box-shadow: none;
-  border: 1px solid black;
+
+.container {
+  max-width: 420px;
+  margin: auto;
 }
-form {
-  display: grid;
-  border: 2px solid black;
-  width: 600px;
-  height: 500px;
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.subtitle {
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.card {
+  background: #fff;
   padding: 20px;
   border-radius: 10px;
-  font-size: 20px;
-  margin: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+input.error {
+  border-bottom: 2px solid red;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+}
+
+.radio-group {
+  margin-top: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.radio-option input {
+  margin-right: 10px;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: #0b2a4a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #083055;
+}
+
+.progress {
+  float: right;
+  text-align: center;
+  font-size: 14px;
+}
+.progress-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  float: right;
+}
+
+.progress-circle svg {
+  transform: rotate(-90deg);
+}
+
+.progress-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-button {
-  background-color: black;
-  color: white;
-  padding: 20px;
-  width: 300px;
-  border-radius: 10px;
-  margin-left: 15px;
-  margin-top: 20px;
-  border: 1px solid black;
-  font-size: 20px;
-  cursor: pointer;
-}
-p,
-input,
-button {
-  font-family: "Courier New", Courier, monospace;
-}
-.list {
-  background-color: rgba(128, 128, 128, 0.114);
-  border-radius: 10px;
-  width: 200px;
-  padding: 22px;
-  position: absolute;
-  margin-left: 60%;
-  margin-top: 280px;
-}
-ul {
-  list-style-type: none;
-}
-
-.percentage {
-  border: 2px solid black;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-left: 70%;
-  margin-top: 30px;
-  position: absolute;
-}
-i {
-  display: flex;
-  justify-content: center;
-  margin-top: 35%;
-}
-#progress {
-  position: absolute;
-  margin-left: 70%;
-  margin-top: 150px;
+  font-size: 14px;
+  font-weight: bold;
 }
