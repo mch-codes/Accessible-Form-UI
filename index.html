@@ -1,40 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accessible-Form-UI</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Contact Preferences</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <div class="box">
-      <form action="">
-        <div class="percentage"><i>65%</i></div>
-        <p id="progress">Profile Completeness</p>
-        <p>Full Name</p>
+    <div class="container">
+      <div class="progress-circle">
+        <svg width="80" height="80">
+          <circle
+            cx="40"
+            cy="40"
+            r="35"
+            stroke="#eee"
+            stroke-width="8"
+            fill="none"
+          />
+          <circle
+            id="progressBar"
+            cx="40"
+            cy="40"
+            r="35"
+            stroke="#0b2a4a"
+            stroke-width="8"
+            fill="none"
+            stroke-linecap="round"
+            stroke-dasharray="219.8"
+            stroke-dashoffset="219.8"
+          />
+        </svg>
+        <div class="progress-text" id="progressText">0%</div>
+      </div>
+
+      <h1>Contact</h1>
+      <h1>Preferences</h1>
+
+      <p class="subtitle">
+        Manage how we reach out to you. Updates made here will apply to all your
+        service notifications.
+      </p>
+
+      <div class="card">
+        <h3>Personal Details</h3>
+
+        <label>Full Name</label>
+        <input type="text" id="name" placeholder="Enter your legal name" />
+
+        <label>Email Address</label>
+        <input
+          type="email"
+          id="email"
+          value="alex.smith@provider"
+          placeholder="alex.smith@provider"
+        />
+
+        <label>Phone Number</label>
         <input
           type="text"
-          name="name"
-          id="name"
-          placeholder="What should we call you?"
+          id="phone"
+          value="+34 123 456 789"
+          placeholder="+34  123 456 789"
         />
-        <p>Email</p>
-        <input type="email" required placeholder="John@doe.com" />
-        <div class="list">
-          <ul>
-            <li><s>Create Account</s></li>
-            <li><s>Update Roadmap Progress</s></li>
-            <li><s>Setup Public Profile</s></li>
-            <li>Complete your first project</li>
-            <li>Invite your friends</li>
-          </ul>
-        </div>
-        <p>Enter Password</p>
-        <input type="password" required placeholder="********" />
-        <p>Confirm Password</p>
-        <input type="password" name="" id="" placeholder="********" />
-        <button>Update Profile</button>
-      </form>
+        <div id="phoneError" class="error-text"></div>
+      </div>
+
+      <button onclick="submitForm()">Submit Preferences</button>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
