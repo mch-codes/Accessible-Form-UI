@@ -46,24 +46,21 @@
       <div class="card">
         <h3>Personal Details</h3>
 
-        <label>Full Name</label>
-        <input type="text" id="name" placeholder="Enter your legal name" />
+        <form onsubmit="submitForm(event)">
+          <label>Full Name</label>
+          <input type="text" id="name" placeholder="Name" />
+          <div id="nameError"></div>
+          <label>Email Address</label>
+          <input type="email" id="email" placeholder="Email" />
+          <div id="emailError"></div>
+          <label>Phone Number</label>
+          <input type="text" id="phone" placeholder="Phone number" />
+          <div id="passwordError"></div>
 
-        <label>Email Address</label>
-        <input
-          type="email"
-          id="email"
-          value=""
-          placeholder="alex.smith@provider"
-        />
-
-        <label>Phone Number</label>
-        <input type="text" id="phone" value="" placeholder="+34  123 456 789" />
-        <div id="phoneError" class="error-text"></div>
+          <button type="submit">Submit</button>
+        </form>
       </div>
-
-      <button onclick="submitForm()">Submit Preferences</button>
+      <script src="app.js"></script>
     </div>
-    <script src="app.js"></script>
   </body>
 </html>
