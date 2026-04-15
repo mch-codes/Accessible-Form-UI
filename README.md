@@ -1,5 +1,5 @@
-![screen2](https://github.com/user-attachments/assets/26a5da18-a2f3-4dca-94ee-167cc47866ca)
-https://mch-codes.github.io/Accessible-Form-UI/
+
+<a>https://mch-codes.github.io/Accessible-Form-UI/</a>
 # Accessible Form UI
 
 A simple and accessible form UI built with HTML, CSS, and JavaScript, following best practices for usability and inclusivity.
