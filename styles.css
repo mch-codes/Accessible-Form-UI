@@ -35,7 +35,7 @@ label {
 
 input[type="text"],
 input[type="email"] {
-  width: 100%;
+  width: 90%;
   padding: 12px;
   border: none;
   border-bottom: 2px solid #ccc;
